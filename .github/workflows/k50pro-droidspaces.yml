@@ -30,7 +30,6 @@ jobs:
       supp_op: false
       droidspaces: ${{ inputs.droidspaces }}
       droidspaces_ntsync: false
-      noroot: false
       artifact_upload_mode: '上传全部'
   manager:
     uses: ./.github/workflows/get-manager.yml
