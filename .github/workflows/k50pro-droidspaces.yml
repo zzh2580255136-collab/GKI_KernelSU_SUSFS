@@ -1,8 +1,5 @@
 name: K50 Pro 5.10.66 Droidspaces experiment
 on:
-  push:
-    branches: [dev]
-    paths: [.github/workflows/k50pro-droidspaces.yml]
   workflow_dispatch:
     inputs:
       droidspaces:
@@ -27,13 +24,13 @@ jobs:
       version: ''
       use_zram: false
       use_bbg: false
-      use_kpm: 'disabled (�ر�)'
+      use_kpm: 'disabled (关闭)'
       use_rekernel: false
       enable_susfs: true
       supp_op: false
       droidspaces: ${{ inputs.droidspaces || '678' }}
       droidspaces_ntsync: false
-      artifact_upload_mode: '�ϴ�ȫ��'
+      artifact_upload_mode: '上传全部'
   manager:
     uses: ./.github/workflows/get-manager.yml
     with:
